@@ -11,10 +11,13 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:windowSoftInputMode="stateHidden|adjustResize">
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity android:name=".ui.BaseActivity">
 
         </activity>
-        <activity android:name=".view.LoginActivity">
+        <activity
+            android:name=".ui.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
